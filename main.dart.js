@@ -6670,10 +6670,31 @@ _.a=a
 _.b=b
 _.d=_.c=0
 _.$ti=c},
-a1b(){if($.aO==null)A.a7e()
-var s=$.aO
-s.AT(B.yI)
-s.tj()},
+a1b(){var s,r=document,q=r.createElement("meta"),p=r.createElement("meta"),o=r.createElement("meta"),n=r.createElement("meta"),m=r.createElement("meta")
+q.name="twitter:card"
+q.content="summary"
+p.name="twitter:site"
+p.content="@flickr"
+o.name="twitter:title"
+o.content="Small Island Developing States Photo Submission"
+n.name="twitter:description"
+n.content="View the album on Flickr."
+m.name="twitter:image"
+m.content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg"
+s=r.head
+if(s!=null)s.appendChild(q)
+s=r.head
+if(s!=null)s.appendChild(p)
+s=r.head
+if(s!=null)s.appendChild(o)
+s=r.head
+if(s!=null)s.appendChild(n)
+r=r.head
+if(r!=null)r.appendChild(m)
+if($.aO==null)A.a7e()
+r=$.aO
+r.AT(B.yI)
+r.tj()},
 wj:function wj(a){this.a=a},
 oK:function oK(a){this.a=a},
 rl:function rl(a){var _=this
