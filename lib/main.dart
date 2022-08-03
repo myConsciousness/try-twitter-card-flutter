@@ -1,6 +1,37 @@
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html' as html;
+
 import 'package:flutter/material.dart';
 
 void main() {
+  final card = html.MetaElement();
+  final site = html.MetaElement();
+  final title = html.MetaElement();
+  final description = html.MetaElement();
+  final image = html.MetaElement();
+
+  card.name = 'twitter:card';
+  card.content = 'summary';
+
+  site.name = 'twitter:site';
+  site.content = '@flickr';
+
+  title.name = 'twitter:title';
+  title.content = 'Small Island Developing States Photo Submission';
+
+  description.name = 'twitter:description';
+  description.content = 'View the album on Flickr.';
+
+  image.name = 'twitter:image';
+  image.content =
+      'https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg';
+
+  html.document.head?.append(card);
+  html.document.head?.append(site);
+  html.document.head?.append(title);
+  html.document.head?.append(description);
+  html.document.head?.append(image);
+
   runApp(const MyApp());
 }
 
